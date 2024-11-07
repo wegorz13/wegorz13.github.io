@@ -1,7 +1,5 @@
 body {
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: max(2.6vw, 18px);
   background-color: rgb(46, 25, 11);
   margin: 0;
   font-family: monospace;
@@ -14,12 +12,20 @@ body {
   text-decoration: none;
 }
 
+#icon {
+  height: 2.5vw;
+  width: 2.5vw;
+  min-height: 15px;
+  min-width: 15px;
+}
 .navbar-link {
-  font-size: 25px;
+  font-size: 2vw;
+
   font-weight: bold;
   display: flex;
   background-color: rgb(151, 111, 71);
-  height: 50px;
+  height: 2.6vw;
+  min-height: 18px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -35,9 +41,10 @@ nav {
   z-index: 999;
   display: grid;
   position: fixed;
-  height: 50px;
+  height: 2.6vw;
+  min-height: 18px;
   width: 100%;
-  grid-template-columns: 180px 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
   align-items: center;
   justify-content: space-around;
   top: 0;
@@ -66,18 +73,19 @@ nav {
 }
 
 .coffee_img {
-  height: 450px;
+  max-width: 90vw;
+  height: min(74vw, 450px);
   width: 550px;
   border-radius: 20px;
 }
 
 .coffee_name {
   color: rgb(151, 111, 71);
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
 
 .footer_p {
-  font-size: 1.5rem;
+  font-size: 1.3vw;
   color: rgb(151, 111, 71);
   font-weight: bold;
   margin-left: 20px;
