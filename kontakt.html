@@ -29,44 +29,66 @@
       <h1 id="contact_header">Skontaktuj się z nami</h1>
       <br />
 
-      <form id="form_content">
-        <div class="topic_select_div">
-          <p class="form_headers">Temat wiadomości</p>
-          <select>
-            <option value="0">Problem technniczny</option>
-            <option value="1">Propozycja treści</option>
-            <option value="2">Inny</option>
-          </select>
-        </div>
-        <br />
-
-        <label for="email" class="form_headers">E-mail</label><br />
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="jkowalski123@gmail.com"
-          required
-        />
-
-        <p class="form_headers">Twoja treść</p>
-        <textarea
-          placeholder="Piszę by zapytać..."
-          name="message"
-          id="message_text"
-          rows="15"
-          cols="45"
-          required
-        >
-        </textarea>
-
-        <input
-          class="form_headers"
-          id="form_btn"
-          type="submit"
-          value="Wyślij"
-        />
-      </form>
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-25">
+              <label for="name">Imię i nazwisko</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jan Kowalski"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">E-mail</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="jkowalski123@gmail.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="temat">Temat</label>
+            </div>
+            <div class="col-75">
+              <select id="temat" name="temat">
+                <option value="" disabled selected hidden>Wybierz temat</option>
+                <option value="1">Propozycja treści</option>
+                <option value="2">Problem techniczny</option>
+                <option value="3">Inny</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Treść</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Piszę w sprawie.."
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Wyślij" />
+          </div>
+        </form>
+      </div>
     </div>
 
     <footer>

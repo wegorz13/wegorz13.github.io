@@ -1,5 +1,5 @@
 body {
-  padding-top: max(2.6vw, 18px);
+  padding-top: 50px;
   background-color: rgb(46, 25, 11);
   margin: 0;
   font-family: monospace;
@@ -12,20 +12,12 @@ body {
   text-decoration: none;
 }
 
-#icon {
-  height: 2.5vw;
-  width: 2.5vw;
-  min-height: 15px;
-  min-width: 15px;
-}
 .navbar-link {
-  font-size: 2vw;
-
+  font-size: 30px;
   font-weight: bold;
   display: flex;
   background-color: rgb(151, 111, 71);
-  height: 2.6vw;
-  min-height: 18px;
+  height: 50px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -41,7 +33,7 @@ nav {
   z-index: 999;
   display: grid;
   position: fixed;
-  height: 2.6vw;
+  height: 50px;
   min-height: 18px;
   width: 100%;
   grid-template-columns: 0.5fr 1fr 1fr 1fr;
@@ -81,12 +73,35 @@ nav {
 
 .coffee_name {
   color: rgb(151, 111, 71);
-  font-size: 2.5vw;
+  font-size: 25px;
 }
 
-.footer_p {
-  font-size: 1.3vw;
+footer {
+  font-size: 25px;
   color: rgb(151, 111, 71);
   font-weight: bold;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-link {
+    font-size: 15px;
+    height: 25px;
+  }
+  nav {
+    height: 25px;
+  }
+  body {
+    padding: 25px;
+  }
+  #icon {
+    height: 15px;
+    width: 15px;
+  }
+  .coffee_name {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 15px;
+  }
 }

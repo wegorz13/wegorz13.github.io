@@ -1,5 +1,5 @@
 body {
-  padding-top: max(2.6vw, 18px);
+  padding-top: 50px;
   background-color: rgb(46, 25, 11);
   margin: 0;
   font-family: monospace;
@@ -12,19 +12,12 @@ body {
   text-decoration: none;
 }
 
-#icon {
-  height: 2.5vw;
-  width: 2.5vw;
-  min-height: 15px;
-  min-width: 15px;
-}
 .navbar-link {
-  font-size: max(2vw, 15px);
-
+  font-size: 30px;
   font-weight: bold;
   display: flex;
   background-color: rgb(151, 111, 71);
-  height: 2.6vw;
+  height: 50px;
   min-height: 18px;
   align-items: center;
   justify-content: center;
@@ -41,7 +34,7 @@ nav {
   z-index: 999;
   display: grid;
   position: fixed;
-  height: 2.6vw;
+  height: 50px;
   min-height: 18px;
   width: 100%;
   grid-template-columns: 0.5fr 1fr 1fr 1fr;
@@ -64,9 +57,8 @@ nav {
 }
 
 .video_container {
-  background-color: wheat;
-  width: 60%;
-
+  background-color: rgb(241, 225, 195);
+  width: 70%;
   margin: 50px;
   padding: 5%;
   padding-bottom: 3%;
@@ -77,7 +69,7 @@ nav {
 
 .brew_type {
   color: rgb(46, 25, 11);
-  font-size: min(4rem, 3vw);
+  font-size: 63px;
   text-align: center;
   margin: 0px;
   margin-bottom: 20px;
@@ -101,9 +93,35 @@ nav {
   margin-bottom: 0px;
 }
 
-.footer_p {
-  margin-left: 20px;
-  font-size: 1.3vw;
+footer {
+  font-size: 25px;
   color: rgb(151, 111, 71);
   font-weight: bold;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-link {
+    font-size: 15px;
+    height: 25px;
+  }
+  nav {
+    height: 25px;
+  }
+  body {
+    padding: 25px;
+  }
+  #icon {
+    height: 15px;
+    width: 15px;
+  }
+  .video_container {
+    width: 95%;
+  }
+  footer {
+    font-size: 15px;
+  }
+  .brew_type {
+    font-size: 45px;
+  }
 }
